@@ -7,37 +7,37 @@
 # Configuração do kernel #
 # ---------------------- #
 
-[root@PC]# passwd
+[root@PC]$ passwd
 # (senha do root)
 
-[root@PC]# echo "%wheel ALL=(ALL) ALL" > /etc/sudoers.d/wheel
+[root@PC]$ echo "%wheel ALL=(ALL) ALL" > /etc/sudoers.d/wheel
 # (setup dos sudoers)
 
-[root@PC]# useradd -m -G wheel -s /bin/bash {username}
+[root@PC]$ useradd -m -G wheel -s /bin/bash {username}
 # (criação do usuário)
 
-[root@PC]# passwd {username}
+[root@PC]$ passwd {username}
 # (senha do usuário)
 
 # --------------------- #
 # Configuração das keys #
 # --------------------- #
 
-[root@PC]# sudo pacman-key --init
+[root@PC]$ sudo pacman-key --init
 # (inicialização das keys)
 
-[root@PC]# sudo pacman-key --populate
+[root@PC]$ sudo pacman-key --populate
 # (população das keys)
 
-[root@PC]# sudo pacman -Sy archlinux-keyring
+[root@PC]$ sudo pacman -Sy archlinux-keyring
 # (instalação do keyring)
 
-[root@PC]# sudo pacman -Su
+[root@PC]$ sudo pacman -Su
 # (atualização do sistema)
 
 # -------- #
 # Neofetch #
 # -------- #
 
-[root@PC]# sudo pacman -S neofetch
+[root@PC]$ sudo pacman -S neofetch
 # (instalação do neofetch)
